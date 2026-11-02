@@ -1,0 +1,89 @@
+ :root {
+        /* Colors */
+        --primary-color: #007bff;
+        --primary-hover: #0069d9;
+        --text-color: #333;
+        --text-light: #555;
+        --text-lighter: #4f4b4b;
+        --text-dark: #222;
+        --text-darker: #282626;
+        --bg-color: #f3f4ff;
+        --white: #ffffff;
+        --black: #000000;
+        --footer-bg: #222;
+        --footer-text: #aaa;
+        --footer-border: #444;
+        --section-padding: 60px 8%;
+
+        
+        /* Fonts */
+        --font-main: "Inter", sans-serif;
+        --font-heading: "Sora", sans-serif;
+        
+
+
+        /* Shadows */
+        --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+        --shadow-medium: 0 5px 15px rgba(0, 0, 0, 0.09);
+        --shadow-card: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+
+         /*transition*/
+         --transition-fast: 0.3s;
+     
+
+        
+     }
+    
+  
+       
+     
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--font-main);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+       section{
+        padding:var(--section-padding);
+        width: 100%;
+        min-height:30vh; 
+        height:auto;
+        scroll-snap-align:start;
+      }header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: var(--white);
+        box-shadow: var(--shadow-light);
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+      }
+      nav ul {
+        font-weight: bold;
+       
+      }
+      nav ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+      }
+       nav ul li a{
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+        transition: color var(--transition-fast);
+      }
+      nav ul li a:hover{
+        color:var(--primary-color)
+      }
