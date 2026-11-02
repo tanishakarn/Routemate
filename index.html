@@ -1,0 +1,78 @@
+ <!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routemate System</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #hero {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+      }
+      /*hero content */
+      .hero-content {
+        max-width: 700px;
+      }
+
+      /*hero-heading*/
+      .hero-content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      /* Hero Paragraph */
+      .hero-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      /* Get Started Button */
+      .hero-content a {
+        display: inline-block;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        background-color: var(--primary-color);
+        color: var(--white);
+        transition: background-color var(--transition-fast);
+      }
+
+      .hero-content a:hover {
+        background-color: var(--primary-hover);
+      }
+    </style>
+
+    /
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about"> About us</a></li>
+          <li><a href="#works"> How it works</a></li>
+          <li><a href="#features"> features </a></li>
+          <li><a href="login.html"> Login</a></li>
+          <li><a href="register.html"> Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Share Your Route, Share Your Ride</h1>
+
+        <p>
+          Routemate connects drivers and passengers traveling in the same
+          direction.
+        </p>
+
+        <a href="register.html">Get Started</a>
+      </div>
+    </section>
+  </body>
+</html>
